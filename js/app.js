@@ -1,7 +1,6 @@
 let campoTotal = 0;
 document.getElementById("lista-produtos").innerHTML = "";
 document.getElementById("valor-total").textContent = "R$ 0"
-if (!produto || produto.trim)(){
 function adicionar(){
     //recuperar nome do produto, quantidade e valor
     let objeto = document.getElementById("produto").value;
@@ -26,11 +25,8 @@ function adicionar(){
     let carrinhoTotal  = document.getElementById("valor-total")
    carrinhoTotal.textContent = `R$ ${campoTotal}`
    document.getElementById("quantidade").value = "";
-} 
-} else {
-  alert ("Insira ao menos uma quantidade")
-    }
-  
+}
+
   
 
     function limpar(){
