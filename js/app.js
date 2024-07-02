@@ -9,7 +9,10 @@ function adicionar(){
     let quantidade = document.getElementById("quantidade").value;
  //calcular o preço, subtotoal
     let preço = quantidade * valorUnitario;
-
+    if (quantidade < 1){
+      alert("insira uma quantidade válida.")
+      return;
+    }
 
    
     //adicionar no carrinho
